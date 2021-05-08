@@ -85,3 +85,6 @@ Also, If the test fails it will show the exactly step and a screenshot of that m
 ![Test Report failures details](images/failuresDetails.png)
 
 ================================================
+
+### Manual Test Part - Introduction
+The application under test were tested using Chrome and it is possible to see it's bugs [BUGs](BUG.md)
