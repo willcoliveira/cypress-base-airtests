@@ -6,8 +6,13 @@
   "scripts": {
     " --- CYPRESS SCRIPTS ---- ": "",
     "cy:open": "cypress open",
-    "cy:run:chrome": "cypress run --browser chrome",
-    "cy:run:headless": "cypress run --headless"
+    "cy:run:chrome": "yarn cy:clean:results; cypress run --browser chrome --reporter mochawesome; yarn cy:results",
+    "cy:run:headless": "yarn cy:clean:results; cypress run --headless --reporter mochawesome; yarn cy:results",
+    " --- MOCHAWESOME REPORT SCRIPTS ---- ": "",
+    "cy:results": "yarn cy:merge:results; yarn cy:final:results",
+    "cy:clean:results": "rm -rf cypress/results/*",
+    "cy:merge:results": "mochawesome-merge cypress/results/*.json > cypress/results/output.json",
+    "cy:final:results": "marge cypress/results/output.json --reportDir cypress/results/"
   },
   "repository": {
     "type": "git",
@@ -25,6 +30,9 @@
   },
   "homepage": "https://github.com/willcoliveira/airtests#readme",
   "devDependencies": {
-    "cypress": "^7.2.0"
+    "cypress": "^7.2.0",
+    "mocha": "^8.4.0",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0"
   }
 }

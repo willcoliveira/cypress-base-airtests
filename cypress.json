@@ -5,10 +5,23 @@
     "integrationFolder": "cypress/tests/",
     "numTestsKeptInMemory": 1,
     "video": false,
-    "defaultCommandTimeout": 10000,
+    "defaultCommandTimeout": 15000,
+    "responseTimeout": 15000,
+    "retries": {
+        "runMode": 1,
+        "openMode": 0
+    },
     "env": {
         "email": "williamcarlos00@gmail.com",
         "password": "Test123.",
         "workspace": "QA test"
+    },
+    "screenshotsFolder": "cypress/results/assets/",
+    "reporter": "mochawesome",
+    "reporterOptions": {
+        "reportDir": "cypress/results/",
+        "overwrite": false,
+        "html": false,
+        "json": true
     }
 }

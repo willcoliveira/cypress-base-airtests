@@ -59,3 +59,29 @@ Or in headless mode
 > ```bash
 > yarn cy:run:headless
 > ```
+
+### How to analyse the Cypress Test Results
+
+This resolution is using mochawesome plugin as its report generator. So, once the execution is done after the one of the commands below:
+
+> ```bash
+> yarn cy:run:headless or yarn cy:run:chrome
+> ```
+
+![Generating the test Report](images/generatingReport.png)
+
+You will be able to see a full report on  the link previous created as it is possible to see on the image above
+
+> ```bash
+>/Users/williamoliveira/Documents/Cypress/oneMineral/cypress/results/output.html
+> ```
+ 
+### Final Report
+![Test Report](images/testReport.png)
+
+### Final Report with Failures
+Also, If the test fails it will show the exactly step and a screenshot of that moment.
+
+![Test Report failures details](images/failuresDetails.png)
+
+================================================
