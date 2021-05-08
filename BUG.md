@@ -198,4 +198,75 @@ See more details on recorded video and screenshots here: ...
 ![content](images/failuresDetails8.png)
 
 
+#### ID-06 - Support Helper - "Test" is the name of helper virtual assitant 
+Type: Bug
+Priority: Normal
+Severity: Normal
+
+##### Environment:
+Macbook Pro 16 2019
+Browser - Google Chrome Version 90.0.4430.93 (Official Build) (x86_64)
+Env - PROD -  https://air-web.vercel.app/
+
+##### Description
+It was possible to verify that the name of support assistant is "Test"
+
+##### Reproduction Route - Pre conditions
+1. Login with the user - williamcarlos00@gmail.com - Test123.
+
+##### Reproduction Route - Steps to reproduce
+1. Visit https://air-web.vercel.app/
+2. Click on support intercom support button on the bottom of the page
+3. Click to send us a message
+4. Verify the name of the assistant -- Air [TEST]
+
+##### Actual Result
+Assitant name is Test.
+
+##### Expected Result
+User should not be able to see Test configuration for assistant's name.
+
+##### Additional Information
+See more details on recorded video and screenshots here: ...
+
+![content](images/failuresDetails9.png)
+
+
+#### ID-07 - Home Page - Content is not using the same alignment rule for different data
+Type: Bug
+Priority: Normal
+Severity: Normal
+
+##### Environment:
+Macbook Pro 16 2019
+Browser - Google Chrome Version 90.0.4430.93 (Official Build) (x86_64)
+Env - PROD -  https://air-web.vercel.app/
+
+##### Description
+It was possible to verify that there are no design systems for the content inside the homepage.
+When looking for the content there are several images bigger than the other and the alignment for a row is not ok.
+Some bigger images are not aligned when comparing with small ones.
+
+##### Reproduction Route - Pre conditions
+1. Login with the user - williamcarlos00@gmail.com - Test123.
+
+##### Reproduction Route - Steps to reproduce
+1. Visit https://air-web.vercel.app/home
+2. Verify different alignments for images on home in accord of its size.
+
+##### Actual Result
+There are some different size of images and rows are not aligned with the content.
+
+##### Expected Result
+User should be able to see the same size for all the content, creating a design system for different images, viadeos and all of the content available to be added into the workspace
+
+##### Additional Information
+See more details on recorded video and screenshots here: ...
+
+![content](images/failuresDetails10.png)
+
+
+
+
+
 
