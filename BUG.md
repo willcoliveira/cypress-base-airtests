@@ -43,7 +43,7 @@ See more details on recorded video and screenshots here: ...
 
 #### ID-02 - Invite Members - User can invite I memeber already registered into the workspace
 Type: Bug
-Priority: Minor
+Priority: Normal
 Severity: Normal
 
 ##### Environment:
@@ -77,4 +77,49 @@ See more details on recorded video and screenshots here: ...
 ![content](images/failuresDetails3.png)
 ![content](images/failuresDetails4.png)
 ![content](images/failuresDetails5.png)
+
+
+#### ID-02 - Invite Members - User can invite the same user several times
+Type: Bug
+Priority: Normal
+Severity: Normal
+
+##### Environment:
+Macbook Pro 16 2019
+Browser - Google Chrome Version 90.0.4430.93 (Official Build) (x86_64)
+Env - PROD -  https://air-web.vercel.app/
+
+##### Description
+It was possible to verify that the user is able to invite the same user several times
+
+##### Reproduction Route - Pre conditions
+1. Login with the user - williamcarlos00@gmail.com - Test123.
+
+##### Reproduction Route - Steps to reproduce
+1. Visit https://air-web.vercel.app/
+2. Click on Invite Members Section
+3. Click on email modal
+4. Insert a new email to invite
+> ```bash
+> E.g: testuserair@mailinator.com
+> ```
+5. Click to Invite
+6. Verify invitation is successfully sent
+7. Add the same email from step 4 on email modal
+8. Click to Invite
+9. Verify invitation is successfully sent
+
+##### Actual Result
+It is possible to iinvite the same user several times. 
+
+##### Expected Result
+User should be able to invite a new user once and then this user could be added into the workspace with status "awaiting the response"
+when this status is visible the same user could not be invited again. It will avoid a couple of emails and crete a status validation.
+From the workspace admin, it is also possible to display a message "This user is already invited, we are waiting its the response"
+
+##### Additional Information
+See more details on recorded video and screenshots here: ...
+On this case, 2 invitations for the same user.
+
+![content](images/failuresDetails4.png)
 
