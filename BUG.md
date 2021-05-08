@@ -3,9 +3,9 @@
 ### Bug Tracking Report
 
 #### ID-01 - Home Page - Search Area - There is no characters limit for the search entry - It is hidding workspace content
-Type: Bug
-Priority: Minor
-Severity: Minor
+- Type: Bug
+- Priority: Minor
+- everity: Minor
 
 ##### Environment:
 Macbook Pro 16 2019
@@ -42,9 +42,9 @@ See more details on recorded video and screenshots here: ...
 
 
 #### ID-02 - Invite Members - User can invite I memeber already registered into the workspace
-Type: Bug
-Priority: Normal
-Severity: Normal
+- Type: Bug
+- Priority: Normal
+- Severity: Normal
 
 ##### Environment:
 Macbook Pro 16 2019
@@ -80,9 +80,9 @@ See more details on recorded video and screenshots here: ...
 
 
 #### ID-03 - Invite Members - User can invite the same user several times
-Type: Bug
-Priority: Normal
-Severity: Normal
+- Type: Bug
+- Priority: Normal
+- Severity: Normal
 
 ##### Environment:
 Macbook Pro 16 2019
@@ -125,9 +125,9 @@ On this case, 2 invitations for the same user.
 
 
 #### ID-04 - Invite Members - There is no message regarding the maximum invitation links available per plan
-Type: Bug
-Priority: Normal
-Severity: Normal
+- Type: Bug
+- Priority: Normal
+- Severity: Normal
 
 ##### Environment:
 Macbook Pro 16 2019
@@ -162,9 +162,9 @@ See more details on recorded video and screenshots here: ...
 ![content](images/failuresDetails6.png)
 
 #### ID-05 - Favorite Assets - Filters options are available on empty page
-Type: Bug
-Priority: Normal
-Severity: Normal
+- Type: Bug
+- Priority: Normal
+- Severity: Normal
 
 ##### Environment:
 Macbook Pro 16 2019
@@ -199,9 +199,9 @@ See more details on recorded video and screenshots here: ...
 
 
 #### ID-06 - Support Helper - "Test" is the name of helper virtual assitant 
-Type: Bug
-Priority: Normal
-Severity: Normal
+- Type: Bug
+- Priority: Normal
+- Severity: Normal
 
 ##### Environment:
 Macbook Pro 16 2019
@@ -233,9 +233,9 @@ See more details on recorded video and screenshots here: ...
 
 
 #### ID-07 - Home Page - Content is not using the same alignment rule for different data
-Type: Bug
-Priority: Normal
-Severity: Normal
+- Type: Bug
+- Priority: Normal
+- Severity: Normal
 
 ##### Environment:
 Macbook Pro 16 2019
@@ -264,6 +264,41 @@ User should be able to see the same size for all the content, creating a design 
 See more details on recorded video and screenshots here: ...
 
 ![content](images/failuresDetails10.png)
+
+
+#### ID-08 - Inivite Members - 2 calls for the same endpoint
+- Type: Bug
+- Priority: Normal
+- Severity: Normal
+
+##### Environment:
+Macbook Pro 16 2019
+Browser - Google Chrome Version 90.0.4430.93 (Official Build) (x86_64)
+Env - PROD -  https://air-web.vercel.app/
+
+##### Description
+It was possible to verify that there are 2 calls for each endpoint when opening the invitation members modal.
+One of them to GET and the other for options. Probably a performace issue when dealing with a high usage from the workspace.
+
+##### Reproduction Route - Pre conditions
+1. Login with the user - williamcarlos00@gmail.com - Test123.
+
+##### Reproduction Route - Steps to reproduce
+1. Visit https://air-web.vercel.app/home
+2. Open the console from the browser go to network tab
+3. Click to open Invite member section
+4. Verify 2 request for all endpoints available
+
+##### Actual Result
+There are 2 request for each endpoint available.. One for get and one for options. 
+
+##### Expected Result
+Remove options call for the endpoints in order to avoid performance issues when dealigin with high usage of this feature from different user into the same workspace.
+
+##### Additional Information
+See more details on recorded video and screenshots here: ...
+
+![content](images/failuresDetails11.png)
 
 
 
