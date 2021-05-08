@@ -160,3 +160,42 @@ For example: basic 1000, pro 10000
 See more details on recorded video and screenshots here: ...
 
 ![content](images/failuresDetails6.png)
+
+#### ID-05 - Favorite Assets - Filters options are available on empty page
+Type: Bug
+Priority: Normal
+Severity: Normal
+
+##### Environment:
+Macbook Pro 16 2019
+Browser - Google Chrome Version 90.0.4430.93 (Official Build) (x86_64)
+Env - PROD -  https://air-web.vercel.app/
+
+##### Description
+It was possible to verify that whehn favority assets page is empty the filters options are available to be filtering.
+Even with no content user is able to filter and page is refreshing.
+
+##### Reproduction Route - Pre conditions
+1. Login with the user - williamcarlos00@gmail.com - Test123.
+
+##### Reproduction Route - Steps to reproduce
+1. Visit https://air-web.vercel.app/
+2. Click on Favorite Assets Sections
+3. Verify page is empty
+4. Click to filter by Date created
+5. Verify page is refreshing its content.
+
+##### Actual Result
+It is possible to filter options inside an empty page.
+
+##### Expected Result
+User should not be able to use filters option on empty page. Avoiding some extra calls or unnecessary request for api.
+
+##### Additional Information
+See more details on recorded video and screenshots here: ...
+
+![content](images/failuresDetails7.png)
+![content](images/failuresDetails8.png)
+
+
+
