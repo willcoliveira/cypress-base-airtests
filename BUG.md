@@ -79,7 +79,7 @@ See more details on recorded video and screenshots here: ...
 ![content](images/failuresDetails5.png)
 
 
-#### ID-02 - Invite Members - User can invite the same user several times
+#### ID-03 - Invite Members - User can invite the same user several times
 Type: Bug
 Priority: Normal
 Severity: Normal
@@ -123,3 +123,40 @@ On this case, 2 invitations for the same user.
 
 ![content](images/failuresDetails4.png)
 
+
+#### ID-04 - Invite Members - There is no message regarding the maximum invitation links available per plan
+Type: Bug
+Priority: Normal
+Severity: Normal
+
+##### Environment:
+Macbook Pro 16 2019
+Browser - Google Chrome Version 90.0.4430.93 (Official Build) (x86_64)
+Env - PROD -  https://air-web.vercel.app/
+
+##### Description
+It was possible to verify that there is no message or information regarding the maximum inviatation link.
+For example, how many user you can invite per plan. How many invites that you sent, how many are available.
+
+##### Reproduction Route - Pre conditions
+1. Login with the user - williamcarlos00@gmail.com - Test123.
+
+##### Reproduction Route - Steps to reproduce
+1. Visit https://air-web.vercel.app/
+2. Click on Invite Members Section
+3. Click on Invite by Link option
+4. Click to create link 
+5. Repeat the step for 10x
+6. Verify there is no message regarding the number of invitation that are available to send.
+
+##### Actual Result
+It is possible to create a lot of new invites via link. However there is no message regarding its limit.
+
+##### Expected Result
+User should be able to see the number of invites available to be send by your plan limit.
+For example: basic 1000, pro 10000
+
+##### Additional Information
+See more details on recorded video and screenshots here: ...
+
+![content](images/failuresDetails6.png)
