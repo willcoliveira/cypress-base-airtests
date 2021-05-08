@@ -1,0 +1,9 @@
+
+{
+    "baseUrl": "https://air-web.vercel.app/",
+    "chromeWebSecurity": false,
+    "integrationFolder": "cypress/tests/",
+    "numTestsKeptInMemory": 1,
+    "video": false,
+    "defaultCommandTimeout": 10000
+}

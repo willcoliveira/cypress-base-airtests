@@ -1,0 +1,30 @@
+{
+  "name": "airtests",
+  "version": "1.0.0",
+  "description": "This project contains some tests in order to show some examples of tests using Cypress.",
+  "main": "index.js",
+  "scripts": {
+    " --- CYPRESS SCRIPTS ---- ": "",
+    "cy:open": "cypress open",
+    "cy:run:chrome": "cypress run --browser chrome",
+    "cy:run:headless": "cypress run --headless"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/willcoliveira/airtests.git"
+  },
+  "keywords": [
+    "JavaScript",
+    "testing",
+    "Cypress"
+  ],
+  "author": "William Oliveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/willcoliveira/airtests/issues"
+  },
+  "homepage": "https://github.com/willcoliveira/airtests#readme",
+  "devDependencies": {
+    "cypress": "^7.2.0"
+  }
+}

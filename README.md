@@ -48,7 +48,6 @@ To run the specs with headed GUI and have a way to debug the tests start Cypress
 > yarn cy:open
 > ```
 
-
 With the command above, Cypress interface will be open and you can select the browser and the exactly file that you want to run. In addition, you are able to select to run all files directly clicking on "Run All Specs" Button.
 
 Also, you can run all the tests using the cli however with a browser opened to follow the whole execution
@@ -56,3 +55,7 @@ Also, you can run all the tests using the cli however with a browser opened to f
 > yarn cy:run:chrome
 > ```
 
+Or in headless mode
+> ```bash
+> yarn cy:run:headless
+> ```
