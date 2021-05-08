@@ -5,5 +5,10 @@
     "integrationFolder": "cypress/tests/",
     "numTestsKeptInMemory": 1,
     "video": false,
-    "defaultCommandTimeout": 10000
+    "defaultCommandTimeout": 10000,
+    "env": {
+        "email": "williamcarlos00@gmail.com",
+        "password": "Test123.",
+        "workspace": "QA test"
+    }
 }

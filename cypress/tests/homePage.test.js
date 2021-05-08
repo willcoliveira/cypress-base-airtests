@@ -1,18 +1,22 @@
+import common from '../pages/common.js';
+import homePage from '../pages/homePage.js';
+import signUpPage from '../pages/signupPage.js';
+
+const commonfeat = new common();
+const homepage = new homePage();
+const signuppage = new signUpPage();
+
 describe('Home Page', () => {
     beforeEach(() => {
-        cy.visit('/')
+        commonfeat.visitPage('home');
     });
 
     it(`should verify home page information sucessfully`, () => {
-        cy.url().should('include', 'air-web.vercel.app/')
-        cy.contains('Where creative process happens')
-        cy.contains(`Centralize your team's content in a workspace that's organized, versioned, and easy to share.`)
-        cy.contains(`Sign up for free`)
+        homepage.assertPageInformation();
     });
 
     it(`should open sign up page sucessfully`, () => {
-        cy.contains(`Sign up for free`).click({ force : true })
-        cy.url().should('include', '/sign-up')
-        cy.contains('Let’s get started')
+        commonfeat.visitByText(`Sign up for free`);
+        signuppage.assertPageInformation();
     });
 });
